@@ -66,14 +66,6 @@ namespace ASPNetCoreOpenID4Cognito
                         return Task.CompletedTask;
                     }
                 };
-                //options.Events = new OpenIdConnectEvents()
-                //{
-                //    OnRedirectToIdentityProviderForSignOut = context =>
-                //    {
-                //        context.ProtocolMessage.IssuerAddress = GetAbsoluteUri(Configuration["oidc:EndSessionEndpoint"], Configuration["oidc:Authority"]);
-                //        return Task.CompletedTask;
-                //    }
-                //};
             });
 
             services.AddAccessTokenManagement();
